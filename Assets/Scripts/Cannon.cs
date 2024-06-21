@@ -28,7 +28,8 @@ public class Cannon : MonoBehaviour
 
             if (timer <= 0)
             {
-                Instantiate(bul, muz.position, transform.rotation);
+                GameObject bullet = Instantiate(bul, muz.position, transform.rotation);
+                bullet.GetComponent<Bullet>().p = p;
                 timer = 3;
             }
         }
