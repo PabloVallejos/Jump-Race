@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c8ad4bcd39420247ab239aa087669fd
+guid: 9fadabb1f8bc7fe43ae7c480bc0b97b1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,211 +123,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obstacles_0
+      name: conejito_jump_animacion-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 38
-        width: 11
+        x: 8
+        y: 4
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2a6e5c9a70f9f4b814dd13a82e3b32
+      internalID: -1047016031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conejito_jump_animacion-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c557bee0ad8e040ae5e63cd205b81e
+      internalID: 569383273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conejito_jump_animacion-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d03370f9ad3014ea83b13266477383
+      internalID: 864139225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conejito_jump_animacion-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 4
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f36906d30aa06c468fbc82c79fb8724
+      internalID: -549187785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conejito_jump_animacion-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dff745e160e5f4ead135c92c549b93
+      internalID: 1376825799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conejito_jump_animacion-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 4
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7c21bb8beb991459ba4183c8bad7cb
+      internalID: -383682922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: conejito_jump_animacion-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 4
+        width: 17
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6251ab9b86774544ea53de4dddf1e77b
-      internalID: 469775677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_1
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 53
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e8ea961820649646a7d42f10ace3a4c
-      internalID: -954923076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_2
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 53
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89895fd3117afda47b6032d3199e9250
-      internalID: -145625429
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_3
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 32
-        width: 11
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8291b61facb6ce74ab6d668a6c874c6a
-      internalID: -666782170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_4
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 40
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6564655a1e60a8c44b4216742c97dbfd
-      internalID: -200658023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_5
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 40
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11688a83e8d2eed42a522be2f0dcbb06
-      internalID: -1477788386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_8
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 0
-        width: 22
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 214e239e006a4be47934b6f8481143be
-      internalID: -300601099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_9
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 0
-        width: 11
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 971095cd30a232543b03d64a1ccbc4e8
-      internalID: -1081763464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_7
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 19
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90f7c0e2bbae64c48ad7aaff95fed0bb
-      internalID: -1637107673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obstacles_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 925fe4c93463e7844842b69b4a4ccd0f
-      internalID: -1395498954
+      spriteID: d90846edec2f1374997082184780c937
+      internalID: 820800094
       vertices: []
       indices: 
       edges: []
@@ -343,17 +280,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Obstacles_0: 469775677
-      Obstacles_1: -954923076
-      Obstacles_10: -1395498954
-      Obstacles_2: -145625429
-      Obstacles_3: -666782170
-      Obstacles_4: -200658023
-      Obstacles_5: -1477788386
-      Obstacles_6: -972131005
-      Obstacles_7: -1637107673
-      Obstacles_8: -300601099
-      Obstacles_9: -1081763464
+      conejito_jump_animacion-Sheet_0: -1047016031
+      conejito_jump_animacion-Sheet_1: 569383273
+      conejito_jump_animacion-Sheet_2: 864139225
+      conejito_jump_animacion-Sheet_3: -549187785
+      conejito_jump_animacion-Sheet_4: 1376825799
+      conejito_jump_animacion-Sheet_5: -383682922
+      conejito_jump_animacion-Sheet_6: 820800094
+      conejito_jump_animacion-Sheet_7: 1493935491
+      conejito_jump_animacion-Sheet_8: 1684253262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

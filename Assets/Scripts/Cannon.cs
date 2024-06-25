@@ -6,13 +6,15 @@ public class Cannon : MonoBehaviour
 {
     public GameObject bul;
     public Transform muz;
+    public SpriteRenderer sr;
+    public Sprite[] sps;
     public bool on;
-    GameObject p;
+    public GameObject p;
     float timer = 3;
 
     void Start()
     {
-        p = GameObject.FindGameObjectWithTag("Player");
+        //p = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -25,6 +27,11 @@ public class Cannon : MonoBehaviour
 
             transform.Rotate(0, 0, angle);
             if (timer > 0) { timer -= Time.deltaTime; }
+            if (p.gameObject.tag == "Player") { sr.sprite = sps[1]; }
+
+            if (p.gameObject.tag == "P1") { sr.sprite = sps[2]; }
+            if (p.gameObject.tag == "P2") { sr.sprite = sps[3]; }
+
 
             if (timer <= 0)
             {
