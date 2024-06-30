@@ -59,8 +59,6 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log("Loading scene ready");
-
         //Load scene
         asyncLoad = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
         asyncLoad.allowSceneActivation = false;
@@ -80,8 +78,6 @@ public class SceneLoader : MonoBehaviour
                 SetProgress(asyncLoad.progress);
                 yield return null;
             }
-
-            Debug.Log(sceneName + " scene ready");
 
             SceneManager.UnloadSceneAsync(loadingSceneName);
         }
