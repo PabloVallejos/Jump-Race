@@ -1,41 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool P;
-    public Rigidbody2D head;
+
+    [SerializeField]
+    private float jumpMultiplier = 100f;
+
+    [SerializeField]
+    private float minPower = 1;
+    [SerializeField]
+    private float maxPower = 10;
+    [SerializeField]
+    Vector2 jumpDirection = new Vector2(1, 2);
+
+    //public Rigidbody2D head;
     Rigidbody2D rb;
     float power;
     bool ground;
-    Vector2 dir;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        dir.y = 1;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        dir.x = Input.GetAxis("Horizontal");
+        int xDir = Mathf.RoundToInt(Input.GetAxisRaw("Horizontal"));
+        if (xDir != 0)
+        {
+            jumpDirection.x = xDir;
+        }
+
         if (Input.GetKey(KeyCode.Space) && ground)
         {
-            power += Time.deltaTime * 100;
-        }if (Input.GetKeyUp(KeyCode.Space) && ground)
-        {
-            rb.AddForce(dir * power);
-            power = 0;
+            if (power < maxPower)
+            {
+                power += Time.deltaTime * jumpMultiplier;
+            }
         }
-        Debug.Log(power);
-        Debug.Log(ground);
 
-        if (head != null)
+        if (Input.GetKeyUp(KeyCode.Space) && ground)
         {
-            head.AddForce(Vector2.up * 0.1f);
+            rb.AddForce(jumpDirection.normalized * power);
+            power = minPower;
         }
+
+        //if (head != null)
+        //{
+        //    head.AddForce(Vector2.up * 0.1f);
+        //}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
