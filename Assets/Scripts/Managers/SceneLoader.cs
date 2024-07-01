@@ -3,34 +3,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class SceneLoader : Singleton<SceneLoader>
 {
-    #region Singleton
-    [SerializeField]
-    private bool dontDestroyOnLoad = false;
-
-    private static SceneLoader _instance;
-
-    public static SceneLoader Instance => _instance;
-
-    void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(this);
-        }
-        else
-        {
-            _instance = this;
-
-            if (dontDestroyOnLoad)
-            {
-                DontDestroyOnLoad(this.gameObject);
-            }
-        }
-    }
-    #endregion
-
     [SerializeField]
     private string loadingSceneName = "Loading";
 
@@ -41,9 +15,25 @@ public class SceneLoader : MonoBehaviour
 
     public event Action<float> OnProgressChanged;
 
+    public void RestartLevel()
+    {
+        string sceneName = SceneManager.GetActiveScene().path;
+        LoadScene(sceneName);
+    }
+
+    public void GoToMainMenu()
+    {
+        LoadScene("MainMenu");
+    }
+
+    public bool LoadComplete()
+    {
+        return SceneManager.GetActiveScene().name != loadingSceneName;
+    }
 
     public void LoadScene(string sceneName)
     {
+        Time.timeScale = 1;
         StartCoroutine(LoadYourAsyncScene(sceneName));
     }
 
@@ -78,9 +68,8 @@ public class SceneLoader : MonoBehaviour
                 SetProgress(asyncLoad.progress);
                 yield return null;
             }
-
-            SceneManager.UnloadSceneAsync(loadingSceneName);
         }
+        SceneManager.UnloadSceneAsync(loadingSceneName);
     }
 
     private void SetProgress(float progress)
