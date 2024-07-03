@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
 
@@ -9,13 +9,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float minPower = 1;
     [SerializeField]
-    private float maxPower = 100;
+    private float maxPower = 2000;
     [SerializeField]
     Vector2 jumpDirection = new Vector2(1, 2);
+
 
     //public Rigidbody2D head;
     Rigidbody2D rb;
     Animator anima;
+    Slider pBar;
     float power;
     bool ground;
 
@@ -23,6 +25,8 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anima = GetComponent<Animator>();
+        pBar = GameObject.FindObjectOfType<Slider>();
+        pBar.maxValue = maxPower;
     }
 
     private void Update()
@@ -50,6 +54,8 @@ public class PlayerController : MonoBehaviour
             anima.SetBool("Jumping", true);
             anima.SetBool("Landing", false);
         }
+
+        pBar.value = power;
 
         //if (head != null)
         //{
