@@ -16,7 +16,8 @@ public class MainMenuController : MonoBehaviour
     }
     public void LoadLevel()
     {
-        SceneLoader.Instance.LoadScene("GUITest");
+        //SceneLoader.Instance.LoadScene("GUITest");
+        SceneLoader.Instance.LoadScene("Level");
     }
 
     public void QuitGame()
